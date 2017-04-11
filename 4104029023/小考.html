@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<H2>Web Programming</H2>
+<hr />
+</head>
+
+<style type="text/css">
+
+a {color:#414141; text-decoration:none;}
+a:hover{color:#4c7cbd; text-decoration:none;}
+.title {
+ font-family: "Cooper Std Red";
+ font-size: 16px;
+ color:#333;
+}
+.overtitle{
+ font-family: "Cooper Std Red";
+ font-size: 16px;
+ color:#999;
+}
+
+</style>
+
+
+<body>
+<form name="form1">
+
+<p>Content</p>
+<style>
+
+</style>
+<div type="button" class="title" onmouseout="this.className='title'" onmouseover="this.className='overtitle'">
+<DIR> 
+<Li id="html1">HTML<span id="AnswerBox"></span></Li>
+<Li><span id="AnswerBox1">CSS</span></Li>
+<Li>DOM</Li>
+<Li>JavaScript</Li>
+<Li><span id="AnswerBox2">JSP</span></Li>
+</DIR>
+
+
+
+
+
+<input type="button" value="以JS更改元素內容" onclick="ShowAnswer()">
+
+
+<input type="button" value="以jQuery更改CSS" id="TBox" onmousemove="ChangeBgColor()" onmouseover="ChangeBgColor1()">
+
+</div>
+
+
+<script type="text/javascript">
+function ShowAnswer(){
+    document.getElementById("AnswerBox").innerHTML='5';
+	
+	document.getElementById("AnswerBox1").innerHTML='CSS3';
+	document.getElementById("AnswerBox2").innerHTML='JSPMySQL';
+	}
+</script>　
+
+
+
+
+
+
+   </form>
+</body>
+	
+	
+	<script language="javascript">
+		function ChangeBgColor(){
+			document.getElementById("TBox").style="width:200px;height:60px;background-color:##FFCC6E;";
+		}
+		function ChangeBgColor1(){
+			document.getElementById("TBox").style="width:100px;height:30px;background-color:#R;";
+		}
+</script>
+</html>
